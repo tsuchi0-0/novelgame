@@ -1,0 +1,134 @@
+@charset "UTF-8";
+html{
+    overflow: hidden;
+}
+body{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    color: #000;
+    background-color: #fff;
+}
+#screen{
+    position: relative;
+    width: 900px;
+    height: 675px;
+    margin: 20px auto;
+    background-color: #000;
+    overflow: hidden
+}
+
+#bgimg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+}
+
+/*西園出専用*/
+.charaposition {
+    position: fixed;
+    width: 800px;  /* CSSでの幅指定 */
+    height: 620px; /* CSSでの高さ指定 */
+    top: 30%;
+    left: 50%;
+    transform: translate(-65%, -103.1%);
+    text-align: center;
+    overflow: hidden;
+    z-index: 2;    
+}
+
+.charaposition img {
+    width: 1100px;  /* 画像の幅を親要素に合わせる */
+    height: 1400px; /* 画像の高さを親要素に合わせる */
+    object-fit: cover; 
+}
+
+
+#charaposition1 {
+    position: relative;
+}
+
+#charaposition2{/*二人表示*/
+    position: relative;
+    transform: translate(-43%, -203.2%);
+}
+#charaposition3{/*二人表示*/
+    position: relative;
+    transform: translate(-95%, -303.2%);
+}
+
+
+#messbox{
+    position: absolute;
+    opacity: 0.8;
+    width: 850px;
+    height: 160px;
+    top: 450px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    background-color: #fff;
+    border: double 10px #000000;
+    z-index: 3;
+}
+
+#textbox{
+    width: 800px;
+    height: 140px;
+    margin: -10px auto;
+}
+#text{
+    color: #000;
+    font-size: 1.5rem;
+    font-family: serif;
+}
+
+
+.selectBox{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,.5);
+    display: none;
+}
+.select{
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #000;
+    border: solid 5px #fff;
+    border-radius: 20px 50px;
+    box-shadow: inset -2px -2px 4px 4px rgba(0,0,0,.5),2px 2px 4px 4px rgba(0,0,0,.5);
+}
+#select1{
+    top: 50px;
+}
+#select2{
+    top: 200px;
+}
+#select3{
+    top: 350px;
+}
+#select4{
+    top: 500px;
+}
+.selectText{
+    margin: 15px auto;
+    text-align: center;
+    color: #fff;
+    font-size: 1.3rem;
+}
+.show{
+    display: block;
+    z-index: 10;
+}
+.none{
+    display: none;
+}

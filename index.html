@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="screen">
+        <img src="img/bg1.jpg" alt="" id="bgimg">
+        <div class="selectBox">
+            <div class="select" id="select1">
+                <p class="selectText" id="selectText1"></p>
+            </div>
+            <div class="select" id="select2">
+                <p class="selectText" id="selectText2"></p>
+            </div>
+            <div class="select" id="select3">
+                <p class="selectText" id="selectText3"></p>
+            </div>
+            <div class="select" id="select4">
+                <p class="selectText" id="selectText4"></p>
+            </div>
+        </div>
+    </div>
+    <input type="text1" placeholder="名前を入力してください" id="name">
+    <button onclick="getInputValue()">ボタン</button>
+    <div class="charabox">
+        <div class="charaposition" id="charaposition1"><img src="img/chara0.png" alt="" id="chara1"></div>
+        <div class="charaposition" id="charaposition2"><img src="img/chara0.png" alt="" id="chara2"></div><!--二人表示-->
+        <div class="charaposition" id="charaposition3"><img src="img/chara0.png" alt="" id="chara3"></div><!--二人表示-->
+    </div>
+    <div id="messbox">
+        <div id="textbox">
+            <p id="text"></p>
+        </div>
+    </div>
+</body>
+
+</html>
